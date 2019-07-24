@@ -1,2 +1,4 @@
+.vscode/
 *username.txt
 *password.txt
+*geckodriver.log
