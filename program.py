@@ -16,20 +16,26 @@ class InstaBot:
         bot.get("https://www.instagram.com/accounts/login/")
         time.sleep(5)
         # Searches place to put in login and password
-        UsernameLogin = bot.find_element_by_name("username")
-        PasswordLogin = bot.find_element_by_name("password")
+        usernamelogin = bot.find_element_by_name("username")
+        passwordlogin = bot.find_element_by_name("password")
         #Clears login in case username and password is already there
-        UsernameLogin.clear()
-        PasswordLogin.clear()
+        usernamelogin.clear()
+        passwordlogin.clear()
         #Puts in username and password then hits enter to login
-        UsernameLogin.send_keys(self.username)
-        PasswordLogin.send_keys(self.password)
-        PasswordLogin.send_keys(Keys.RETURN)
+        usernamelogin.send_keys(self.username)
+        passwordlogin.send_keys(self.password)
+        passwordlogin.send_keys(Keys.RETURN)
+        time.sleep(5)
+    def like_post(self,hashtag):
+        bot = self.bot
+        bot.get("https://www.instagram.com/explore/tags/"+hashtag+"/")
         time.sleep(5)
 
 
+#Hides username and password from anyone that tries to clone this
 username = open("username.txt","r")
 password = open("password.txt","r")
 
 ed = InstaBot(username.read(),password.read())
 ed.login()
+ed.like_post("meme")
