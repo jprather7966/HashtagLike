@@ -10,3 +10,4 @@ Installion Guide:
 6. Create a username.txt and password.txt file
 7. Put your username in the username.txt file
 8. Put your password in the password.txt file
+9. Run the program and enjoy! :)
