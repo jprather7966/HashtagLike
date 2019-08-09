@@ -1,7 +1,7 @@
 # HashtagLike
 A Instagram bot in Python that goes through a hashtag and likes all the posts 
 
-Installion Guide:
+## Installion Guide:
 1. [Download and install the latest version of Python](https://www.python.org/downloads/)
 2. [Download and install Firefox](https://www.mozilla.org/en-US/firefox/new/) 
 3. [Download and install Gecko Drivers](https://github.com/user/repo/blob/branch/other_file.md)
